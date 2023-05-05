@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohan Prasath S</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" id="btn-container">
+      <div class="profile-wrapper">
+        <img
+          src="./images/my_img_in_kg_cinemas.jpeg"
+          alt=""
+          srcset=""
+          class="profile"
+        />
+      </div>
+      <p class="text-white">
+        Hello! I am <span style="color: greenyellow">Mohan Prasath S</span>
+        <br />
+        I am a Software developer <br />
+        developing Web & Mobile apps and <br />
+        aspiring
+        <bold>Tech Entrepreneur</bold>
+      </p>
+    </div>
+  </body>
+  <script src="./components/Btn.js"></script>
+  <script>
+    // Example usage
+    const button = ({ link, icon, text }) => `
+      <a target="_blank" class="btn" href=${link} _blank style='background-color:black'>
+      <img src="./icons/${icon}" alt="" srcset="" class="ic" /> ${text}
+      </a>
+            `;
+    const buttonJson = [
+      {
+        link: "https://www.youtube.com/@mohan_prasath",
+        icon: "youtube.png",
+        text: "Subscribe to My Channel",
+      },
+      {
+        link: "https://twitter.com/s_mohan_prasath",
+        icon: "twitter.png",
+        text: "follow me on Twitter",
+      },
+      {
+        link: "https://linkedin.com/in/s-mohan-prasath",
+        icon: "linkedin.png",
+        text: "Stay Connected with Linkedin",
+      },
+      {
+        link: "https://instagram.com/s.mohanprasath",
+        icon: "instagram.png",
+        text: "Follow me on instagram",
+      },
+      {
+        link: "https://github.com/s_mohan_prasath",
+        icon: "github-color.png",
+        text: "Let's Collaborate on GitHub",
+      },
+    ];
+    const btn_cont = document.getElementById("btn-container");
+    buttonJson.map((cont) =>
+      btn_cont.insertAdjacentHTML("beforeend", button(cont))
+    );
+  </script>
+</html>
