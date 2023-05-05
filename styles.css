@@ -60,6 +60,7 @@ body {
   gap: 15px;
   font-size: medium;
   padding: 10px 5px;
+  padding-left:8px;
   border-radius: 10px;
 }
 .btn:hover {
