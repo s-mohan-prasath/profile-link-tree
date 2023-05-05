@@ -59,8 +59,9 @@ body {
   align-items: center;
   gap: 15px;
   font-size: medium;
-  padding: 10px 5px;
-  padding-left:8px;
+  padding: 10px;
+  padding-left:7px;
+  padding-right:5px;
   border-radius: 10px;
 }
 .btn:hover {
